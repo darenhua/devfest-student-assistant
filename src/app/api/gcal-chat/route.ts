@@ -88,6 +88,25 @@ export async function POST(req: Request) {
           controller.enqueue(encoder.encode("data: [DONE]\n\n"));
           controller.close();
         } catch (err: any) {
+          // Check if this is an OAuth error thrown during stream iteration
+          if (err instanceof AuthenticationError) {
+            const errBody = err.error as any;
+            const connectUrl =
+              errBody?.connect_url ||
+              errBody?.detail?.connect_url ||
+              null;
+
+            if (connectUrl) {
+              controller.enqueue(
+                encoder.encode(
+                  `data: ${JSON.stringify({ type: "oauth_required", connect_url: connectUrl })}\n\n`
+                )
+              );
+              controller.close();
+              return;
+            }
+          }
+
           controller.enqueue(
             encoder.encode(
               `data: ${JSON.stringify({ type: "error", content: err.message })}\n\n`

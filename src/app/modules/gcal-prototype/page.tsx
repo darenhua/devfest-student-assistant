@@ -153,6 +153,14 @@ export default function GCalPrototype() {
                   };
                   return copy;
                 });
+              } else if (event.type === "oauth_required") {
+                // OAuth needed — show the banner instead of an error
+                setOauthUrl(event.connect_url);
+                setConnected(false);
+                // Remove the empty assistant message
+                setMessages((prev) => prev.slice(0, -1));
+                setStreaming(false);
+                return;
               } else if (event.type === "error") {
                 setMessages((prev) => {
                   const copy = [...prev];

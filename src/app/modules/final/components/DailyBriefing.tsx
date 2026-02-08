@@ -41,7 +41,7 @@ export function DailyBriefing({
   return (
     <div
       ref={setNodeRef}
-      className={`flex h-full flex-col transition-colors duration-200 ${isOver ? "bg-orange-50" : "bg-gray-50"}`}
+      className={`flex h-full flex-col transition-colors duration-200 ${isOver ? "bg-orange-200" : "bg-gray-50"}`}
     >
       <div className="flex-1 overflow-y-auto">
         <BriefingEditor

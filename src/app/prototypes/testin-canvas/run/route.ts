@@ -84,14 +84,24 @@ async function callMcpTool(url: string, toolName: string, args: Record<string, u
   return result;
 }
 
+const MAX_TOOL_RESULT_CHARS = 30_000; // ~30 KB per tool result to stay within context limits
+
 function extractMcpResult(result: any): string {
+  let text: string;
   if (result?.content) {
     const texts = result.content
       .filter((c: any) => c.type === "text")
       .map((c: any) => c.text);
-    return texts.length === 1 ? texts[0] : texts.join("\n");
+    text = texts.length === 1 ? texts[0] : texts.join("\n");
+  } else {
+    text = JSON.stringify(result);
   }
-  return JSON.stringify(result);
+
+  if (text.length > MAX_TOOL_RESULT_CHARS) {
+    console.log(`[canvas-mcp-bridge] Truncating tool result from ${text.length} to ${MAX_TOOL_RESULT_CHARS} chars`);
+    text = text.slice(0, MAX_TOOL_RESULT_CHARS) + "\n\n[... truncated — result too large]";
+  }
+  return text;
 }
 
 function createMcpToolWrappers(url: string, mcpTools: McpTool[]) {
@@ -206,6 +216,7 @@ export async function POST(request: Request) {
       model: "anthropic/claude-sonnet-4-20250514",
       instructions,
       tools: allTools as any,
+      maxSteps: 15,
     });
     const elapsed = Date.now() - startTime;
 

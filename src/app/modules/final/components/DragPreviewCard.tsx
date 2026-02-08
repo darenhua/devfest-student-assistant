@@ -5,21 +5,21 @@ export function DragPreviewCard({ data }: { data: DragItemData }) {
   let subtitle: string;
 
   switch (data.type) {
-    case "assignment":
+    case "homework":
       title = data.item.title;
-      subtitle = `${data.item.className} — due ${new Date(data.item.dueDate).toLocaleDateString()}`;
+      subtitle = `${data.item.className ? data.item.className + " \u2014 " : ""}due ${data.item.dueDate}`;
       break;
     case "event":
       title = data.item.title;
-      subtitle = `${data.item.time} · ${data.item.location}`;
+      subtitle = `${data.item.timeLabel}${data.item.location ? ` \u00b7 ${data.item.location}` : ""}`;
       break;
     case "office_hour":
-      title = `${data.item.professor} — Office Hours`;
-      subtitle = `${data.item.course} · ${data.item.day} ${data.item.startTime}–${data.item.endTime}`;
+      title = data.item.label;
+      subtitle = `${data.item.timeInfo}${data.item.location ? ` \u00b7 ${data.item.location}` : ""}`;
       break;
     case "exam":
       title = data.item.title;
-      subtitle = `${data.item.course} · ${data.item.date} ${data.item.time}`;
+      subtitle = `${data.item.timeInfo}${data.item.location ? ` \u00b7 ${data.item.location}` : ""}`;
       break;
   }
 
