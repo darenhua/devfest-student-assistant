@@ -1,0 +1,54 @@
+{
+  "components": [
+    {
+      "name": "MainLayout",
+      "file": "MainLayout.tsx",
+      "description": "Top-level page layout with header, calendar panel (left), and homework panel (right)",
+      "props": ["assignments: Assignment[]", "calendarEvents: CalendarEvent[]"]
+    },
+    {
+      "name": "CalendarPanel",
+      "file": "CalendarPanel.tsx",
+      "description": "Weekly calendar container with week navigation (prev/next/today state transitions) and sync button",
+      "props": ["events: CalendarEvent[]"]
+    },
+    {
+      "name": "CalendarGrid",
+      "file": "CalendarGrid.tsx",
+      "description": "Weekly calendar grid showing 7 day columns (Sun-Sat) with events placed on correct days",
+      "props": ["weekStart: Date", "events: CalendarEvent[]"]
+    },
+    {
+      "name": "CalendarEvent",
+      "file": "CalendarEvent.tsx",
+      "description": "Single event pill displayed inside a calendar day cell",
+      "props": ["event: CalendarEvent"]
+    },
+    {
+      "name": "SyncButton",
+      "file": "SyncButton.tsx",
+      "description": "Google Calendar sync button with loading/syncing state transition",
+      "props": []
+    },
+    {
+      "name": "HomeworkPanel",
+      "file": "HomeworkPanel.tsx",
+      "description": "Right-side panel listing homework cards sorted by due date, with Add Source button",
+      "props": ["assignments: Assignment[]"]
+    },
+    {
+      "name": "HomeworkCard",
+      "file": "HomeworkCard.tsx",
+      "description": "Individual homework card showing title, class (color dot), due date, and source link badge",
+      "props": ["assignment: Assignment"]
+    },
+    {
+      "name": "AddSourceButton",
+      "file": "AddSourceButton.tsx",
+      "description": "Button that toggles a URL input popover for adding new crawl sources (open/closed state transition)",
+      "props": []
+    }
+  ],
+  "types": "types.ts",
+  "fixtures": "fixtures.ts"
+}

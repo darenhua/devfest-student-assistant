@@ -1,0 +1,10 @@
+[project]
+name = "dauth-demo-mcp"
+version = "0.1.0"
+description = "Dedalus MCP server with DAuth (OAuth 2.1) authentication enabled"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dedalus-labs>=0.2.0",
+    "dedalus-mcp>=0.7.0",
+]

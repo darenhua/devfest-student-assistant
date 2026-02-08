@@ -1,0 +1,12 @@
+[project]
+name = "canvas-lms-mcp"
+version = "0.1.0"
+description = "MCP server wrapping the Canvas LMS REST API for student-facing queries"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dedalus-labs>=0.2.0",
+    "dedalus-mcp>=0.7.0",
+    "python-dotenv>=1.2.1",
+    "httpx>=0.28.0",
+]

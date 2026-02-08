@@ -1,0 +1,13 @@
+[project]
+name = "ext-sources-mcp"
+version = "0.1.0"
+description = "MCP server that crawls external course homepages to find assignments, exams, office hours, and syllabi"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dedalus-labs>=0.2.0",
+    "dedalus-mcp>=0.7.0",
+    "python-dotenv>=1.2.1",
+    "httpx>=0.28.0",
+    "beautifulsoup4>=4.12.0",
+]

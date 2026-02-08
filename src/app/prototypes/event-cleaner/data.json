@@ -1,0 +1,313 @@
+
+{"bwEventList": {
+      
+    "resultSize": "108",
+    "paged": "true",
+    "lastMod" : {
+      "utc" : "20260208T084815Z",
+      "long" : "February 8, 2026 3:48 AM"
+    },
+    "events": [
+       
+      {
+        "summary" : "Punch Cards &amp; Polaroids: Goal Setting with CIEE Study Abroad!",
+        "subscriptionId" : "",
+        "calPath" : "%2Fpublic%2Fcals%2FMainCal",
+        "guid" : "CAL-00bbdb71-9bb69dd4-019b-b7cb3a10-00001a53events%40columbia.edu",
+        "recurrenceId" : "",
+        "link" : "https://urldefense.com/v3/__https://forms.office.com/Pages/ResponsePage.aspx?id=bm3_hL-_lU-gx7-q-AF68qfEIjdDL29LlNOn4rqN385UMTNONUlYNDVNUlhVNzI2NklGSVMzNE0xMi4u__;!!BDUfV1Et5lrpZQ!R2Be9Pll-REui0aZmSKXbL1rGOpVsfLylqYI8yDxwXlFbQ41R947SLwkLrwYWiVbNRGxF8PXRozr3U8qcVcl$",
+        "eventlink" : "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-9bb69dd4-019b-b7cb3a10-00001a53events%40columbia.edu&recurrenceId=",
+        "status" : "CONFIRMED",
+        "formattedDate" : "Monday, February 9, 2026 11:00 AM - 1:00 PM",
+        "startDate" : "2026-02-09T16:00:00Z",
+        "endDate" : "2026-02-09T18:00:00Z",
+        "start" : {
+          "allday" : "false",
+          "shortdate" : "2/9/26",
+          "longdate" : "February 9, 2026",
+          "dayname" : "Monday",
+          "time" : "11:00 AM",
+          "utcdate" : "20260209T160000Z",
+          "datetime" : "20260209T110000",
+          "timezone" : "America/New_York"
+        },
+        "end" : {
+          "allday" : "false",
+          "shortdate" : "2/9/26",
+          "longdate" : "February 9, 2026",
+          "dayname" : "Monday",
+          "time" : "1:00 PM",
+          "utcdate" : "20260209T180000Z",
+          "datetime" : "20260209T130000",
+          "timezone" : "America/New_York"
+        },
+        "location" : {
+          "address" : "Uris Hall, 3022 Broadway, New York, NY 10027\t309",
+          "link" : "https://goo.gl/maps/yLNFj"
+        },
+        "contact" : {
+          "name" : "Center for Undergraduate Global Engagement",
+          "phone" : "",
+          "email" : "uge@columbia.edu",
+          "link" : ""
+        },
+        "calendar" : {
+          "name" : "MainCal",
+          "displayName" : "MainCal",
+          "path" : "/public/cals/MainCal",
+          "encodedPath" : "%2Fpublic%2Fcals%2FMainCal"
+        },
+        "categories" : [
+          "Morningside","Type","Location","Audience","Category","Information Session","Student","Events open to","org/UniversityEvents","Columbia College","Columbia Engineering","Global Programs","General Studies","org/OGPF","Study Abroad"
+        ],
+        "categories_hierarchy" : {
+          
+          "00bbdcb6-4c0f9d55-014c-138dff7e-00000f37": { 
+              "parent_id": "0",
+              "name": "Type"
+           },                    
+           
+          "00bbdcb6-4c0f9d55-014c-138e1631-00000f38": { 
+              "parent_id": "0",
+              "name": "Location"
+           },                    
+           
+          "00bbdcb6-4c0f9d55-014c-138e2e42-00000f39": { 
+              "parent_id": "0",
+              "name": "Audience"
+           },                    
+           
+          "00bbdcb6-4c0f9d55-014c-138e495a-00000f3a": { 
+              "parent_id": "0",
+              "name": "Category"
+           },                    
+           
+          "00bbdcb6-4c0f9d55-014c-137b812b-00000ef5" : { 
+              "parent_id": "00bbdcb6-4c0f9d55-014c-138e1631-00000f38",
+              "name": "Morningside"
+          }, 
+          "00bbdcb6-4c0f9d55-014c-13a95245-00001016" : { 
+              "parent_id": "00bbdcb6-4c0f9d55-014c-138dff7e-00000f37",
+              "name": "Information Session"
+          }, 
+          "00bbdcb6-4c0f9d55-014c-13d17ef3-000010a9" : { 
+              "parent_id": "00bbdcb6-4c0f9d55-014c-138e2e42-00000f39",
+              "name": "Student"
+          }, 
+          "00bbdcc6-55312673-0155-59919737-000001c8" : { 
+              "parent_id": "Group Specific",
+              "name": "Columbia College"
+          }, 
+          "00bbdcc6-55312673-0155-5991b834-000001c9" : { 
+              "parent_id": "Group Specific",
+              "name": "Columbia Engineering"
+          }, 
+          "00bbdcc7-4f3359a9-014f-66aa877f-0000702e" : { 
+              "parent_id": "Group Specific",
+              "name": "General Studies"
+          }, 
+          "00bbdcc7-559d0c15-0155-9e0defed-0000472e" : { 
+              "parent_id": "Group Specific",
+              "name": "Study Abroad"
+          }, 
+          "00bbdcc6-5567b05d-0155-7ea1f65d-0000702d" : { 
+              "parent_id": "00bbdcb6-4c0f9d55-014c-138e495a-00000f3a",
+              "name": "Global Programs"
+          }
+        },            
+        "description" : "&lt;p&gt;Join the &lt;a href=\"https://global.undergrad.columbia.edu/studyabroad\" target=\"_blank\"&gt;Center for Undergraduate Global Engagement (UGE)&lt;/a&gt; and program representatives from CIEE Study Abroad for coffee, pastries, and inspiration! At this event, you&amp;#39;ll have the opportunity to set academic, personal, and global goals for the new semester, learn how to plan your study abroad journey, and enter raffles for fun prizes like a Polaroid camera. Learn more about CIEE&amp;#39;s comprehensive programs in the Czech Republic, Jordan, South Africa, Spain, South Korea, and more! Don&amp;#39;t miss out on starting your next adventure!&lt;/p&gt;\n&lt;p&gt;Drop in anytime on &lt;strong&gt;Monday, February 9th, 2026, between 11:00 AM to 1:00 PM&lt;/strong&gt; in &lt;strong&gt;309 Uris Hall&lt;/strong&gt;&amp;nbsp;to learn more about how to take your goals global! &lt;a href=\"https://urldefense.com/v3/__https://forms.office.com/Pages/ResponsePage.aspx?id=bm3_hL-_lU-gx7-q-AF68qfEIjdDL29LlNOn4rqN385UMTNONUlYNDVNUlhVNzI2NklGSVMzNE0xMi4u__;!!BDUfV1Et5lrpZQ!R2Be9Pll-REui0aZmSKXbL1rGOpVsfLylqYI8yDxwXlFbQ41R947SLwkLrwYWiVbNRGxF8PXRozr3U8qcVcl$\" target=\"_blank\"&gt;Register now at this link&lt;/a&gt;&amp;nbsp;or reserve your seat below!&lt;/p&gt;",
+        "cost" : "",
+        "topicalArea":  [
+           "Location/Morningside", "Type/Information Session", "Events open to/Student", "Group Specific/Columbia College", "Group Specific/Columbia Engineering", "Group Specific/General Studies", "Group Specific/Study Abroad", "Category/Global Programs"
+        ],            
+                      
+        "ics_link": "https://events.columbia.edu/cal/misc/export.gdo?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-9bb69dd4-019b-b7cb3a10-00001a53events%40columbia.edu&recurrenceId=&nocache=no&contentName=ics-file.ics",        
+        
+        
+           "uni_registration_link" : "https://cas.columbia.edu/cas/login?service=https://events.columbia.edu/eventreg/ureg/init.do?href=%2Fpublic%2Fcals%2FMainCal%2FCAL-00bbdb71-9bb69dd4-019b-b7cb3a10-00001a53.ics%26evcontactemail=uge@columbia.edu",
+           
+        
+        
+        "xproperties" : [
+          
+          {
+            "X-BEDEWORK-WAIT-LIST-LIMIT" : {
+              "values" : {
+                 
+                   "text" : "\t0"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-REGISTRATION-START" : {
+              "values" : {
+                 
+                   "text" : "20250828T000000"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-UNI-ONLY-REG" : {
+              "values" : {
+                 
+                   "text" : "\tYES"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-IMAGE" : {
+              "values" : {
+                 
+                   "text" : "/public/images/Spain_Barcelona_CIEE Barcelona Liberal Arts-202601130938.png"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-REGISTRATION-END" : {
+              "values" : {
+                 
+                   "text" : "20260209T105500"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-THUMB-IMAGE" : {
+              "values" : {
+                 
+                   "text" : "\t/public/images/Spain_Barcelona_CIEE Barcelona Liberal Arts-202601130938-thumb.png"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Location/Morningside"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Type/Information Session"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Events open to/Student"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Group Specific/Columbia College"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Group Specific/Columbia Engineering"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Group Specific/General Studies"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Group Specific/Study Abroad"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-ALIAS" : {
+              "values" : {
+                 
+                   "text" : "/user/agrp_calsuite-OGPF/Category/Global Programs"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-MAX-TICKETS-PER-USER" : {
+              "values" : {
+                 
+                   "text" : "\t1"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-MAX-TICKETS" : {
+              "values" : {
+                 
+                   "text" : "\t100"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-SUBMITTEDBY" : {
+              "values" : {
+                 
+                   "text" : "ar4252 for OGPF (agrp_OGPF)"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-REG-BUTTON-TEXT" : {
+              "values" : {
+                 
+                   "text" : "Reserve Your Seat"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-DESCRIPTION-FORMAT" : {
+              "values" : {
+                 
+                   "text" : "html"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-CALSUITE" : {
+              "values" : {
+                 
+                   "text" : "Office of Global Programs and Fellowships"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-CUSTOM-URL-LABEL" : {
+              "values" : {
+                 
+                   "text" : "Register Here!"
+              }
+            }
+          },
+          {
+            "X-BEDEWORK-SHORTTITLE" : {
+              "values" : {
+                 
+                   "text" : "Punch Cards &amp; Polaroids: Goal Setting with CIEE Study Abroad!"
+              }
+            }
+          }
+
+        ]
+     }
+    ]
+}}

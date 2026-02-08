@@ -1,0 +1,11 @@
+[project]
+name = "columbia-events-mcp"
+version = "0.1.0"
+description = "MCP server that fetches Columbia events, cleans them, and manages a local JSON store"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dedalus-labs>=0.2.0",
+    "dedalus-mcp>=0.7.0",
+    "httpx>=0.28.0",
+]
