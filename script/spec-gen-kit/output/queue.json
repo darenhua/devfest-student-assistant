@@ -1,0 +1,10 @@
+[
+  {
+    "id": "0ebc3367-96cf-4277-822f-3e764b385160",
+    "branch": "prototype/ti",
+    "modulePath": "src/app/modules/ti",
+    "prompt": "We are working on `@src/app/modules/ti`.\n\nPlease first study `@src/app/modules/ti/SPEC.md`, then implement the requirement specified there into the working directory.\n",
+    "status": "pending",
+    "submittedAt": "2026-02-16T11:11:26.461Z"
+  }
+]

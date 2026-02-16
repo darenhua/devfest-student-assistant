@@ -1,0 +1,32 @@
+{
+  "createdAt": "2026-02-16T10:55:39.792Z",
+  "entries": [
+    {
+      "id": "recent-1771239315372-026u6il",
+      "componentPath": "/Users/lellyo/Desktop/cool-projects/devfest-school/web/src/app/modules/final/page.tsx",
+      "lineNumber": 33,
+      "componentName": "Ti",
+      "context": "how does the drag and drop card into notepad functionality ai fill effect work",
+      "slug": "ti-dnd",
+      "enabled": true
+    },
+    {
+      "id": "recent-1771239283358-8a6ytx1",
+      "componentPath": "/Users/lellyo/Desktop/cool-projects/devfest-school/web/src/app/modules/final/page.tsx",
+      "lineNumber": 33,
+      "componentName": "Ti",
+      "context": "how do we implement this notepad",
+      "slug": "ti",
+      "enabled": true
+    },
+    {
+      "id": "recent-1771239266919-xc54a80",
+      "componentPath": "/Users/lellyo/Desktop/cool-projects/devfest-school/web/src/app/modules/final/components/AgentDashboard.tsx",
+      "lineNumber": 370,
+      "componentName": "AllList",
+      "context": "where does this data come from",
+      "slug": "all-list",
+      "enabled": true
+    }
+  ]
+}
