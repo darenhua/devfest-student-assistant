@@ -473,12 +473,16 @@ async function runSideEffect(
     }
 
     case 'generate-spec': {
-      // SPEC.md must already exist on disk (written by the async SDK task).
-      // This stage just verifies and commits it.
-      if (fs.existsSync(path.join(absModulePath, 'SPEC.md'))) {
-        break;
+      // If spec content was passed in memory (robust against branch switches),
+      // write it to disk. Otherwise fall back to checking if it already exists.
+      const specContent = opts?._specContent as string | undefined;
+      if (specContent) {
+        fs.mkdirSync(absModulePath, { recursive: true });
+        fs.writeFileSync(path.join(absModulePath, 'SPEC.md'), specContent, 'utf-8');
+      } else if (!fs.existsSync(path.join(absModulePath, 'SPEC.md'))) {
+        throw new Error('SPEC.md not found. Run generation first or retry.');
       }
-      throw new Error('SPEC.md not found. Run generation first or retry.');
+      break;
     }
 
     case 'make-implement': {
@@ -516,6 +520,7 @@ async function runSideEffect(
         body: JSON.stringify({
           prompt,
           name: slug,
+          branch: branchName,
         }),
       });
 

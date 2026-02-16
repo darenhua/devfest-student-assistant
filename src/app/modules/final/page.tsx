@@ -25,6 +25,8 @@ import { DragPreviewCard } from "./components/DragPreviewCard";
 import { ChatSheet } from "./components/ChatSheet";
 import { buildAIPrompt } from "./components/buildAIPrompt";
 import type { DragItemData } from "./components/types";
+import { CommentOverlayProvider } from "./comment-overlay/CommentOverlayProvider";
+import { ExtractionTriggerButton } from "./components/ExtractionTriggerButton";
 
 export default function FinalPage() {
   const dndId = useId();
@@ -63,7 +65,7 @@ export default function FinalPage() {
   }
 
   return (
-    <>
+    <CommentOverlayProvider>
       <DndContext
         id={dndId}
         sensors={sensors}
@@ -121,6 +123,9 @@ export default function FinalPage() {
           <ChatSheet />
         </SheetContent>
       </Sheet>
-    </>
+
+      {/* Extraction trigger button — floating pill above react-grab menu */}
+      <ExtractionTriggerButton />
+    </CommentOverlayProvider>
   );
 }

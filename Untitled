@@ -1,3 +1,0 @@
-  File "/Users/lellyo/Desktop/cool-projects/devfest-school/web/src/app/prototypes/dedalus-mcp/server/server.py", line 20, in <module>
-    from dedalus_mcp.auth import AuthorizationConfig, Connection, SecretKeys
-ImportError: cannot import name 'AuthorizationConfig' from 'dedalus_mcp.auth' (/Users/lellyo/Desktop/cool-projects/devfest-school/web/src/app/prototypes/dedalus-mcp/server/.venv/lib/python3.12/site-packages/dedalus_mcp/auth/__init__.py)

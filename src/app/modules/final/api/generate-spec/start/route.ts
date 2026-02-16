@@ -107,8 +107,12 @@ export async function POST(
           if (result.success) {
             const specPath = path.join(absModulePath, 'SPEC.md');
             if (fs.existsSync(specPath)) {
+              // Read SPEC.md into memory before addCommit changes branches
+              const specContent = fs.readFileSync(specPath, 'utf-8');
               try {
-                await addCommit(branch, 'generate-spec');
+                await addCommit(branch, 'generate-spec', {
+                  _specContent: specContent,
+                } as any);
                 console.log(`[spec-gen][${branch}] generate-spec committed`);
                 // Auto-continue: make-implement is trivial, no SDK needed
                 await addCommit(branch, 'make-implement');
@@ -171,8 +175,12 @@ export async function POST(
           if (result.success) {
             const specPath = path.join(absModulePath, 'SPEC.md');
             if (fs.existsSync(specPath)) {
+              // Read SPEC.md into memory before addCommit changes branches
+              const specContent = fs.readFileSync(specPath, 'utf-8');
               try {
-                await addCommit(branch, 'generate-spec');
+                await addCommit(branch, 'generate-spec', {
+                  _specContent: specContent,
+                } as any);
                 console.log(`[spec-gen][${branch}] generate-spec committed`);
                 // Auto-continue: make-implement is trivial, no SDK needed
                 await addCommit(branch, 'make-implement');

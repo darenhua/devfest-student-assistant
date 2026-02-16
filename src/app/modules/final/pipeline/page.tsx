@@ -146,13 +146,12 @@ function StageProgress({
             )}
             <div className="group relative">
               <div
-                className={`h-3 w-3 rounded-full border-2 transition-all ${
-                  done
-                    ? "border-emerald-500 bg-emerald-500"
-                    : isNext
-                      ? "border-indigo-400 bg-indigo-400/20 animate-pulse"
-                      : "border-zinc-600 bg-transparent"
-                }`}
+                className={`h-3 w-3 rounded-full border-2 transition-all ${done
+                  ? "border-emerald-500 bg-emerald-500"
+                  : isNext
+                    ? "border-indigo-400 bg-indigo-400/20 animate-pulse"
+                    : "border-zinc-600 bg-transparent"
+                  }`}
               />
               <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-[10px] leading-tight bg-zinc-800 text-zinc-200 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10">
                 {STAGE_LABELS[stage]}
@@ -534,11 +533,10 @@ function BranchCard({
     <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-5 space-y-4 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-zinc-800">
         <div
-          className={`h-full transition-all duration-500 ${
-            pipelineComplete
-              ? "bg-gradient-to-r from-emerald-500 to-emerald-400"
-              : "bg-gradient-to-r from-indigo-500 to-emerald-500"
-          }`}
+          className={`h-full transition-all duration-500 ${pipelineComplete
+            ? "bg-gradient-to-r from-emerald-500 to-emerald-400"
+            : "bg-gradient-to-r from-indigo-500 to-emerald-500"
+            }`}
           style={{ width: `${progress * 100}%` }}
         />
       </div>
@@ -611,11 +609,10 @@ function BranchCard({
 
       {toast && (
         <div
-          className={`absolute bottom-3 left-3 right-3 rounded px-3 py-2 text-xs font-medium transition-all ${
-            toast.type === "ok"
-              ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
-              : "bg-red-500/20 text-red-300 border border-red-500/30"
-          }`}
+          className={`absolute bottom-3 left-3 right-3 rounded px-3 py-2 text-xs font-medium transition-all ${toast.type === "ok"
+            ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+            : "bg-red-500/20 text-red-300 border border-red-500/30"
+            }`}
         >
           {toast.msg}
         </div>
@@ -766,9 +763,6 @@ function ImportTransformZone({
           <h3 className="text-sm font-medium text-zinc-200">
             Import & Transform
           </h3>
-          <p className="text-[10px] text-zinc-500 mt-0.5">
-            Import overlay annotations and convert them to extraction branches
-          </p>
         </div>
         {!showImport && entries.length > 0 && (
           <button
@@ -811,11 +805,10 @@ function ImportTransformZone({
             {entries.map((entry, i) => (
               <div
                 key={entry.id}
-                className={`rounded-lg border p-4 space-y-3 transition-opacity ${
-                  entry.enabled
-                    ? "border-zinc-700 bg-zinc-800/50"
-                    : "border-zinc-800/50 bg-zinc-800/20 opacity-50"
-                }`}
+                className={`rounded-lg border p-4 space-y-3 transition-opacity ${entry.enabled
+                  ? "border-zinc-700 bg-zinc-800/50"
+                  : "border-zinc-800/50 bg-zinc-800/20 opacity-50"
+                  }`}
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2 min-w-0">
@@ -837,11 +830,10 @@ function ImportTransformZone({
                     onClick={() =>
                       updateEntry(i, { enabled: !entry.enabled })
                     }
-                    className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium border transition-colors ${
-                      entry.enabled
-                        ? "bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
-                        : "bg-zinc-800 text-zinc-500 border-zinc-700"
-                    }`}
+                    className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium border transition-colors ${entry.enabled
+                      ? "bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
+                      : "bg-zinc-800 text-zinc-500 border-zinc-700"
+                      }`}
                   >
                     {entry.enabled ? "ON" : "OFF"}
                   </button>
@@ -965,12 +957,8 @@ export default function PipelineDashboardPage() {
                 &larr; Back to Final
               </a>
               <h1 className="text-2xl font-bold tracking-tight mt-1">
-                Component Extraction Pipeline
+                Demo Stuffz
               </h1>
-              <p className="text-sm text-zinc-500 mt-0.5">
-                Overlay Annotations &rarr; Extraction Specs &rarr; Prototype
-                Branches
-              </p>
             </div>
             <button
               onClick={refresh}
